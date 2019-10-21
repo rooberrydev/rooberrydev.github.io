@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow: hidden;
+  --accent-color: #fc7a57;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.start-splash-screen {
+  background-color: var(--start-background);
+  height: 100vh;
+  width: 100vw;
+  padding: 5vw;
+  font-family: "Zilla Slab Highlight", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start-splash-screen > * {
+  margin: 2vh;
+}
+.record {
+  position: relative;
+  margin: 19px auto;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle at center, #ada9a0 9px, #000000 10px, #ada9a0 14px);
+}
+.record:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -7.5vh;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  background: var(--accent-color);
+  content: "";
+}
+.play-button {
+  width: 8vh;
+  height: 5vh;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+}
