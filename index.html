@@ -9,13 +9,6 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav id="track-list" class="track-list-nav">
-      <h1 class="track-list-title">Track List</h1>
-      <a href="#about" class="track-heading">1. About</a>
-      <a href="#fac" class="track-heading">2. Founders And Coders</a>
-      <a href="#projects" class="track-heading">3. Projects</a>
-      <a href="#contact" class="track-heading">4. Get in touch</a>
-    </nav>
     <div class="start-splash-screen">
       <div class="record"></div>
       <h1>REUBEN THOMAS</h1>
@@ -23,11 +16,31 @@
       <p>Press Play</p>
       <button class="play-button">&#9654;</button>
     </div>
-    <section class="main-section about" id="about"></section>
-    <section class="main-section fac" id="fac"></section>
-    <section class="main-section projects" id="projects"></section>
-    <section class="main-section contact" id="contact"></section>
-
+    <main class="main-wrapper">
+      <nav id="track-list" class="track-list-nav">
+        <h1 class="track-list-title">Track List</h1>
+        <a href="#about" class="track-heading">1. About</a>
+        <a href="#fac" class="track-heading">2. Founders And Coders</a>
+        <a href="#projects" class="track-heading">3. Projects</a>
+        <a href="#contact" class="track-heading">4. Get in touch</a>
+      </nav>
+      <section class="main-section about" id="about">
+        <h1 class="main-title">About Me</h1>
+        <a href="#track-list" class="track-heading">^Back to track list^</a>
+      </section>
+      <section class="main-section fac" id="fac">
+        <h1 class="main-title">Founders And Coders</h1>
+        <a href="#track-list" class="track-heading">^Back to track list^</a>
+      </section>
+      <section class="main-section projects" id="projects">
+        <h1 class="main-title">Projects</h1>
+        <a href="#track-list" class="track-heading">^Back to track list^</a>
+      </section>
+      <section class="main-section contact" id="contact">
+        <h1 class="main-title">Contact</h1>
+        <a href="#track-list" class="track-heading">^Back to track list^</a>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
