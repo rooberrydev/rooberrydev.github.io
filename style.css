@@ -177,18 +177,27 @@ a:visited {
 .project {
   min-width: 200px;
   max-width: 500px;
-  min-height: 30vh;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 2vh;
   margin: 2vw;
-  height: 20vh;
   border: 2px solid var(--accent-color);
 }
 .project > * {
   margin: 0.5vh;
 }
+.project-title {
+  display: block;
+}
 .project .link {
   font-size: 1rem;
   margin: 0.5vh;
+}
+.project-about {
+  font-family: Montserrat, sans-serif;
 }
 .contact-link {
   margin: 5vh;
@@ -196,4 +205,7 @@ a:visited {
   color: black;
   background-color: white;
   text-decoration: none;
+}
+.highlight {
+  background-color: var(--accent-color);
 }
