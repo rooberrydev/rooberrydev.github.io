@@ -12,7 +12,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+body {
+  position: relative;
+}
 body,
 h1,
 h2,
@@ -53,17 +55,17 @@ a:link {
   padding: 5vw;
   font-family: "Zilla Slab Highlight", monospace;
   display: flex;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  right: 0;
-  transition: right 1s ease-in-out;
+  transform: translateX(0);
+  transition: transform 1.5s;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 100;
 }
 .hidden {
-  right: 100vw;
+  transform: translateX(-100vw);
 }
 .start-splash-screen > * {
   margin: 2vh;
@@ -162,6 +164,31 @@ a:visited {
   font-family: Montserrat, sans-serif;
   line-height: 1.5rem;
   max-width: 600px;
+}
+.projects-wrapper {
+  width: 100vw;
+  max-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  overflow: scroll;
+}
+.project {
+  min-width: 200px;
+  max-width: 500px;
+  min-height: 30vh;
+  padding: 2vh;
+  margin: 2vw;
+  height: 20vh;
+  border: 2px solid var(--accent-color);
+}
+.project > * {
+  margin: 0.5vh;
+}
+.project .link {
+  font-size: 1rem;
+  margin: 0.5vh;
 }
 .contact-link {
   margin: 5vh;
