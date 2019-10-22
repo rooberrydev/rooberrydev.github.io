@@ -38,8 +38,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-a {
+a:link {
   font-size: 2rem;
+  color: black;
 }
 .main-wrapper {
   display: flex;
