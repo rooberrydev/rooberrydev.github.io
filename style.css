@@ -151,7 +151,7 @@ a:visited {
 .main-title {
   background-color: var(--accent-color);
   font-size: 2rem;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
 }
 .about-wrapper {
   width: 90vw;
@@ -171,7 +171,7 @@ a:visited {
 .profile-img {
   height: 15vh;
   width: auto;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
   border: 2vh solid black;
   box-shadow: -2vh -2vh 0 0 var(--accent-color);
 }
@@ -223,7 +223,7 @@ a:visited {
   font-size: 14px;
   line-height: 1.5rem;
   max-width: 600px;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
 }
 .projects-wrapper {
   width: 100vw;
@@ -273,5 +273,15 @@ a:visited {
 @media only screen and (max-width: 600px) {
   .tech-stack-slideshow {
     width: 90vw;
+  }
+  .main-title,
+  .main-section .link {
+    font-size: 1.5rem;
+  }
+  .profile-img {
+    box-shadow: -0.5vh -0.5vh 0 0 var(--accent-color);
+    border: 1vh solid black;
+    height: 12vh;
+    width: auto;
   }
 }
