@@ -103,25 +103,6 @@ a:link {
   background-color: black;
 }
 
-.track-list-nav {
-  font-family: "Zilla Slab Highlight", monospace;
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 2vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.track-list-title {
-  background-color: var(--accent-color);
-}
-.track-list-title,
-.link {
-  margin: 5vh;
-  font-size: 2rem;
-}
 .main-section .link {
   margin: 0;
   text-align: center;
