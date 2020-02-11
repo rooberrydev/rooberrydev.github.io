@@ -1,6 +1,14 @@
+document.querySelector("body").scrollIntoView({
+  behavior: "auto"
+});
+
 let playButton = document.querySelector(".play-button");
-let splashScreen = document.querySelector(".start-splash-screen");
+
 playButton.addEventListener("click", e => {
   document.querySelector("#about").scrollIntoView();
-  document.querySelector("html").style.overflow = "scroll";
+  document.querySelector("html").style.overflowY = "scroll";
 });
+document.onload = () => {
+  if (window.pageYOffset > 0)
+    document.querySelector("html").style.overflowY = "scroll";
+};
