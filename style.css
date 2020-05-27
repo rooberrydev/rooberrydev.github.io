@@ -5,6 +5,8 @@ html {
   scroll-behavior: smooth;
   position: relative;
   --accent-color: #fc7a57;
+  --main-background-blue: #90dcff;
+  --greyish: #3b5b69;
 }
 
 *,
@@ -49,16 +51,23 @@ a[target="_blank"]::after {
 a:visited {
   color: black;
 }
+
+body {
+  background-color: var(--main-background-blue);
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: ;
 }
 .start-splash-screen {
-  background-color: white;
+  background-color: var(--main-background-blue);
+  color: var(--greyish);
   height: 100vh;
   width: 100vw;
   padding: 5vw;
-  font-family: "Zilla Slab Highlight", monospace;
+  font-family: "Zilla Slab", monospace;
   display: flex;
   z-index: 1;
   transform: translateX(0);
@@ -70,6 +79,7 @@ a:visited {
 }
 .splash-screen-title {
   text-align: center;
+  color: black;
 }
 .hidden {
   transform: translateX(-100vw);
@@ -104,8 +114,15 @@ a:visited {
   width: 8vh;
   height: 5vh;
   font-size: 1.5rem;
-  color: white;
-  background-color: black;
+  border-radius: 3rem;
+  border: 2px solid var(--greyish);
+  color: var(--main-background-blue);
+  background-color: var(--greyish);
+  outline: none;
+}
+
+.play-button:active {
+  transform: scale(0.95);
 }
 a:visited {
   color: black;
