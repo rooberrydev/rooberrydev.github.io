@@ -16,9 +16,23 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="start-splash-screen">
+    <div class="start-splash-screen" id="start">
       <div class="record"></div>
       <h1 class="splash-screen-title">REUBEN GEORGE THOMAS</h1>
+      <div class="contact-bar">
+        <a target="_blank" href="https://github.com/reubengt">
+          <img class="contact-image" src="./assets/github.svg" />
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/reuben-george-thomas">
+          <img class="contact-image" src="./assets/linkedin.svg" />
+        </a>
+        <a target="_blank" href="https://twitter.com/reubenmightcode">
+          <img class="contact-image" src="./assets/twitter.svg" />
+        </a>
+        <a href="./assets/Reuben_George_Thomas_CV.pdf" download>
+          <img class="contact-image" src="./assets/cv-icon.svg" />
+        </a>
+      </div>
       <h2>SOFTWARE DEVELOPER</h2>
       <p>Press Play</p>
       <button class="play-button">&#9654;</button>
@@ -272,32 +286,24 @@
         </div>
       </section>
       <section class="main-section contact" id="contact">
-        <h1 class="main-title">Contact</h1>
-        <a
-          href="https://github.com/reubengt"
-          class="contact-link"
-          target="_blank"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/reuben-george-thomas"
-          class="contact-link"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        <a href="tel:07834243164" class="contact-link">Phone</a>
-        <a href="mailto:reubengeorgethomas@gmail.com" class="contact-link">
-          Email
-        </a>
-        <a
-          href="./assets/Reuben_George_Thomas_CV.pdf"
-          class="contact-link"
-          download
-        >
-          Download CV &#8595;
-        </a>
+        <div class="contact-bar">
+          <a target="_blank" href="https://github.com/reubengt">
+            <img class="contact-image" src="./assets/github.svg" />
+          </a>
+          <a
+            target="_blank"
+            href="https://linkedin.com/in/reuben-george-thomas"
+          >
+            <img class="contact-image" src="./assets/linkedin.svg" />
+          </a>
+          <a target="_blank" href="https://twitter.com/reubenmightcode">
+            <img class="contact-image" src="./assets/twitter.svg" />
+          </a>
+          <a href="./assets/Reuben_George_Thomas_CV.pdf" download>
+            <img class="contact-image" src="./assets/cv-icon.svg" />
+          </a>
+        </div>
+        <a class="back-to-start" href="#start">Back to Start</a>
       </section>
     </main>
     <script src="./script.js"></script>
