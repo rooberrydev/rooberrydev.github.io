@@ -5,6 +5,8 @@ html {
   scroll-behavior: smooth;
   position: relative;
   --accent-color: #fc7a57;
+  --main-background-blue: #90dcff;
+  --greyish: #3b5b69;
 }
 
 *,
@@ -37,28 +39,34 @@ img {
   max-width: 100%;
   height: auto;
 }
-a:link {
-  font-size: 2rem;
-  color: black;
-}
 
 a[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0 3px 0 5px;
 }
+
+a {
+  color: black;
+}
+
 a:visited {
   color: black;
 }
+
+body {
+  background-color: var(--main-background-blue);
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
 }
 .start-splash-screen {
-  background-color: white;
+  background-color: var(--main-background-blue);
+  color: var(--greyish);
   height: 100vh;
   width: 100vw;
-  padding: 5vw;
-  font-family: "Zilla Slab Highlight", monospace;
+  font-family: "Zilla Slab", monospace;
   display: flex;
   z-index: 1;
   transform: translateX(0);
@@ -70,6 +78,7 @@ a:visited {
 }
 .splash-screen-title {
   text-align: center;
+  color: black;
 }
 .hidden {
   transform: translateX(-100vw);
@@ -93,22 +102,51 @@ a:visited {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -7.5vh;
-  width: 15vh;
-  height: 15vh;
+  margin: -9vh;
+  width: 18vh;
+  height: 18vh;
   border-radius: 50%;
-  background: var(--accent-color);
+  border: 15px solid var(--accent-color);
+  background-image: url(./assets/profile_square.jpg);
+  background-size: contain;
   content: "";
 }
+
+.contact-bar {
+  width: 75vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-bar a:after {
+  content: none;
+}
+.contact-bar a:hover {
+  transform: scale(0.95);
+  filter: opacity(0.5);
+}
+.contact-image {
+  height: 3rem;
+  width: auto;
+  margin: 0.5rem;
+}
 .play-button {
-  width: 8vh;
-  height: 5vh;
+  width: 4rem;
+  height: auto;
   font-size: 1.5rem;
-  color: white;
-  background-color: black;
+  border-radius: 3rem;
+  border: 2px solid var(--greyish);
+  color: var(--main-background-blue);
+  background-color: var(--greyish);
+  outline: none;
+}
+
+.play-button:active {
+  transform: scale(0.95);
 }
 a:visited {
-  color: black;
+  color: var(--greyish);
 }
 .main-section {
   height: auto;
@@ -120,8 +158,7 @@ a:visited {
   justify-content: space-between;
   align-items: center;
 }
-.about,
-.contact {
+.about {
   min-height: 100vh;
 }
 .section-nav {
@@ -130,7 +167,9 @@ a:visited {
   justify-content: space-around;
 }
 .main-title {
-  background-color: var(--accent-color);
+  color: black;
+  padding: 0;
+  margin: 0;
   font-size: 2rem;
   margin-bottom: 2vh;
 }
@@ -154,9 +193,8 @@ a:visited {
 .profile-img {
   height: 15vh;
   width: auto;
-  /* margin-bottom: 2vh; */
-  border: 2vh solid black;
-  box-shadow: -2vh -2vh 0 0 var(--accent-color);
+  border: 5px solid var(--accent-color);
+  box-shadow: 0px 0px 15px 0px var(--greyish);
 }
 .tech-stack {
   display: flex;
@@ -166,6 +204,9 @@ a:visited {
   width: 90vw;
   height: 20vh;
   overflow-x: hidden;
+}
+.tech-stack-title {
+  margin-top: 2vh;
 }
 .tech-stack-slideshow {
   position: relative;
@@ -225,7 +266,9 @@ a:visited {
   align-items: flex-start;
   padding: 2vh;
   margin: 2vw;
-  border: 2px solid var(--accent-color);
+  border: 5px solid var(--accent-color);
+  box-shadow: 0px 0px 15px 0px var(--greyish);
+  border-radius: 1rem;
 }
 .project > * {
   margin: 2vh;
@@ -235,11 +278,18 @@ a:visited {
   color: var(--accent-color);
 }
 .project-title {
+  font-size: 2rem;
   display: block;
+  color: black;
   margin-bottom: 2vh;
   background-color: var(--accent-color);
 }
-.project .link {
+
+.project-title:visited {
+  color: black;
+}
+
+.project-link {
   margin: 0;
   text-align: center;
   color: black;
@@ -253,25 +303,25 @@ a:visited {
   font-size: 1rem;
   margin: 0;
 }
-.contact-link {
-  margin: 5vh;
-  text-align: center;
-  color: black;
-  background-color: white;
-  text-decoration: none;
+.project-video {
+  width: 95%;
+  align-self: center;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px 0px var(--greyish);
 }
-.highlight {
-  background-color: var(--accent-color);
+.back-to-start {
+  font-family: "Zilla Slab", monospace;
+  margin-top: 4vh;
 }
-
 @media only screen and (max-width: 600px) {
   .tech-stack-slideshow {
     width: 90vw;
   }
   .profile-img {
-    box-shadow: -0.5vh -0.5vh 0 0 var(--accent-color);
-    border: 1vh solid black;
     height: 12vh;
     width: auto;
+  }
+  .project-title {
+    font-size: 1.5rem;
   }
 }

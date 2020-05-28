@@ -1,11 +1,11 @@
 document.querySelector("body").scrollIntoView({
-  behavior: "auto"
+  behavior: "auto",
 });
 
 let playButton = document.querySelector(".play-button");
 
-playButton.addEventListener("click", e => {
-  document.querySelector("#about").scrollIntoView();
+playButton.addEventListener("click", (e) => {
+  document.querySelector("#projects").scrollIntoView();
   document.querySelector("html").style.overflowY = "scroll";
 });
 document.onload = () => {

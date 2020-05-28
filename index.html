@@ -16,70 +16,28 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="start-splash-screen">
+    <div class="start-splash-screen" id="start">
       <div class="record"></div>
       <h1 class="splash-screen-title">REUBEN GEORGE THOMAS</h1>
-      <h2>SOFTWARE ENGINEER</h2>
+      <div class="contact-bar">
+        <a target="_blank" href="https://github.com/reubengt">
+          <img class="contact-image" src="./assets/github.svg" />
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/reuben-george-thomas">
+          <img class="contact-image" src="./assets/linkedin.svg" />
+        </a>
+        <a target="_blank" href="https://twitter.com/reubenmightcode">
+          <img class="contact-image" src="./assets/twitter.svg" />
+        </a>
+        <a href="./assets/Reuben_George_Thomas_CV.pdf" download>
+          <img class="contact-image" src="./assets/cv-icon.svg" />
+        </a>
+      </div>
+      <h2>SOFTWARE DEVELOPER</h2>
       <p>Press Play</p>
       <button class="play-button">&#9654;</button>
     </div>
     <main class="main-wrapper">
-      <section class="main-section about" id="about">
-        <div class="about-wrapper">
-          <h1 class="main-title">About Me</h1>
-          <img class="profile-img" src="./assets/profile_square.jpg" />
-          <p class="profile-about">
-            Full Stack Javascript Developer & Founders and Coders Graduate.<br /><br />
-            I enjoy the challenge of connecting things together, building the
-            processes that are invisible to the user, yet invaluable to the
-            final product. <br /><br />I prioritise writing efficient code that
-            has been tested to integrate well with existing systems.<br /><br />
-            When I'm not coding, you'll find me fiddling with various musical
-            objects.<br />
-            const whereDoesTheMoneyGo = {musicgear: "just one more"}
-          </p>
-
-          <h1 class="main-title">Tech Stack</h1>
-          <div class="tech-stack">
-            <div class="tech-stack-slideshow">
-              <div class="tech-stack-icons">
-                <!-- these repeat for the infinite slideshow -->
-                <img class="tech-stack-icon" src="./assets/html.svg" />
-                <img class="tech-stack-icon" src="assets/css.svg" />
-                <img class="tech-stack-icon" src="./assets/javascript.svg" />
-                <img class="tech-stack-icon" src="./assets/git.svg" />
-                <img class="tech-stack-icon" src="./assets/node.svg" />
-                <img class="tech-stack-icon" src="./assets/express.svg" />
-                <img class="tech-stack-icon" src="./assets/postgres.svg" />
-                <img class="tech-stack-icon" src="./assets/react.svg" />
-                <img class="tech-stack-icon" src="./assets/html.svg" />
-                <img class="tech-stack-icon" src="assets/css.svg" />
-                <img class="tech-stack-icon" src="./assets/javascript.svg" />
-                <img class="tech-stack-icon" src="./assets/git.svg" />
-                <img class="tech-stack-icon" src="./assets/node.svg" />
-                <img class="tech-stack-icon" src="./assets/express.svg" />
-                <img class="tech-stack-icon" src="./assets/postgres.svg" />
-                <img class="tech-stack-icon" src="./assets/react.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-section fac" id="fac">
-        <h1 class="main-title">Founders And Coders</h1>
-        <p class="fac-about">
-          Founders and Coders is the future of education.<br />
-          A free, but highly selective, 18 week javascript bootcamp where I was
-          surrounded by self-motivated, highly driven individuals on a daily
-          basis. As someone who has felt stuck in dry, demotivating educational
-          environments in his past, an education model where curiosity and
-          creativity are nurtured and rewarded was a breath of fresh air. In 18
-          weeks we covered a broad range of software development skills and
-          methodologies, and put them into practice on project after project,
-          day after day, week after week. <br />I've linked a few of my
-          favourite projects in the next section.
-        </p>
-      </section>
       <section class="main-section projects" id="projects">
         <h1 class="main-title">Projects</h1>
         <div class="projects-wrapper">
@@ -93,7 +51,7 @@
                 Autsera Game
               </a>
               <a
-                class="link"
+                class="project-link"
                 href="https://github.com/fac-17/Autsera"
                 target="_blank"
               >
@@ -101,19 +59,66 @@
               </a>
             </div>
             <p class="project-about">
-              <span class="highlight">Scalable</span> point-and-click adventure
-              game built with <span class="highlight">React</span>. <br /><br />
+              Scalable point-and-click adventure game built with React.
+              <br /><br />
               Aims to help children living with high-functioning autism learn
               social skills.
               <br /><br />3 week final project at Founders and Coders for
-              <a class="link" href="https://autsera.io" target="_blank">
+              <a href="https:/autsera.com" target="_blank">
                 Autsera.com
               </a>
               , which I then took on as a paid freelance project, to refine the
               UI and mobile responsiveness.
               <br /><br />
-              <span class="highlight">Installable as a PWA.</span>
+              Installable as a PWA.
             </p>
+            <video
+              class="project-video"
+              controls
+              preload="none"
+              poster="./assets/autserascreenshot.jpg"
+            >
+              <source src="./assets/autserademo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project">
+            <div class="project-head">
+              <a
+                class="project-title"
+                href="https://commentative.herokuapp.com/"
+                target="_blank"
+              >
+                Commentative
+              </a>
+              <a
+                class="project-link"
+                href="https://github.com/Commentative/commentative"
+                target="_blank"
+              >
+                GitHub Repo
+              </a>
+            </div>
+            <p class="project-about">
+              A web app that facilitates collaborative, intimate discussion when
+              sharing web content. <br /><br />
+              Ongoing collaborative project that was born at the
+              <a href="https://hackthepress.org" target="_blank"
+                >HackThePress Hackathon</a
+              >
+              in October 2019.<br /><br />
+              Built with Node.js, Express.js, and Handlebars.js templating.
+              <br /><br />I was responsible for most of the node.js backend and
+              the frontend, while my teammate worked on the commenting system,
+              which is an AWS DynamoDB API.
+            </p>
+            <video
+              class="project-video"
+              controls
+              preload="none"
+              poster="./assets/commentative-screenshot.jpg"
+            >
+              <source src="./assets/commentative-demo.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="project">
             <div class="project-head">
@@ -125,7 +130,7 @@
                 Meet me in the middle
               </a>
               <a
-                class="link"
+                class="project-link"
                 href="https://github.com/fac-17/Where-Should-We-Meet"
                 target="_blank"
               >
@@ -137,12 +142,21 @@
               and finds you a venue to meet at in the middle!
               <br /><br />Uses the Postcodes.io API to convert postcodes to
               coordinates, and the yelp API to find venues.<br /><br />
-              Built with
-              <span class="highlight"
-                >Node.js, PostgreSQL, Express and Handlebars.js.</span
-              ><br />
+              Built with <br />
+              Node.js, PostgreSQL, Express and Handlebars.js.<br />
               Provides citymapper and calendar integration.
             </p>
+            <video
+              class="project-video"
+              controls
+              preload="none"
+              poster="./assets/meet-me-in-the-middlescreenshot.jpg"
+            >
+              <source
+                src="./assets/meet-me-in-the-middle-demo.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div class="project">
             <div class="project-head">
@@ -154,41 +168,30 @@
                 Space4 Invaders
               </a>
               <a
-                class="link"
+                class="project-link"
                 href="https://github.com/fac-17/face-name-game"
                 target="_blank"
                 >GitHub Repo
               </a>
             </div>
             <p class="project-about">
-              <span class="highlight">React</span> game inspired by Space
-              Invaders.<br /><br />
-              Enter a github team and learn everyone's names!
+              React game inspired by Space Invaders.<br /><br />
+              Enter a github team and learn everyone's names!<br /><br />
+              Uses the github api to fetch team information and subsequently
+              individual profile data.<br /><br />
+              Entirely hook based state management and side effects.
             </p>
-          </div>
-          <div class="project">
-            <div class="project-head">
-              <a
-                class="project-title"
-                href="https://final-factasy.herokuapp.com/"
-                target="_blank"
-              >
-                Final Factasy
-              </a>
-              <a
-                class="link"
-                href="https://github.com/fac-17/Week6-DFIO"
-                target="_blank"
-              >
-                GitHub Repo
-              </a>
-            </div>
-            <p class="project-about">
-              Fantasy Item Shop built to learn
-              <span class="highlight">Databases and Authentication.</span
-              ><br /><br />
-              Built with Node.js and PostgreSQL. Authentication using bcrypt.
-            </p>
+            <video
+              class="project-video"
+              controls
+              preload="none"
+              poster="./assets/space4invadersscreenshot.jpg"
+            >
+              <source
+                src="./assets/space-4-invaders-demo.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div class="project">
             <div class="project-head">
@@ -200,7 +203,7 @@
                 Trainspiration
               </a>
               <a
-                class="link"
+                class="project-link"
                 href="https://github.com/fac-17/week-3-MEIA"
                 target="_blank"
               >
@@ -208,65 +211,99 @@
               </a>
             </div>
             <p class="project-about">
-              <span class="highlight"
-                >A clone of the TFL live status widget.</span
-              ><br /><br />Built with the TFL API. Loads faster than the tfl
-              website, so I actually use this myself to check line status
-              (*humble-brag*)
+              A clone of the TFL live status widget. ><br /><br />Built with the
+              TFL API. Loads faster than the tfl website, so I actually use this
+              myself to check line status (*humble-brag*)
             </p>
+            <video
+              class="project-video"
+              controls
+              preload="none"
+              poster="./assets/trainspirationscreenshot.jpg"
+            >
+              <source src="./assets/trainspiration-demo.mp4" type="video/mp4" />
+            </video>
           </div>
-          <div class="project">
-            <div class="project-head">
-              <a
-                class="project-title"
-                href="https://chin-week5-apis.herokuapp.com/"
-                target="_blank"
-              >
-                Taking Stock
-              </a>
-              <a
-                class="link"
-                href="https://github.com/fac-17/week5-chin-project"
-                target="_blank"
-                >GitHub Repo
-              </a>
+        </div>
+        <h1 class="main-title tech-stack-title">Tech Stack</h1>
+        <div class="tech-stack">
+          <div class="tech-stack-slideshow">
+            <div class="tech-stack-icons">
+              <!-- these repeat for the infinite slideshow -->
+              <img class="tech-stack-icon" src="./assets/html.svg" />
+              <img class="tech-stack-icon" src="assets/css.svg" />
+              <img class="tech-stack-icon" src="./assets/javascript.svg" />
+              <img class="tech-stack-icon" src="./assets/git.svg" />
+              <img class="tech-stack-icon" src="./assets/node.svg" />
+              <img class="tech-stack-icon" src="./assets/express.svg" />
+              <img class="tech-stack-icon" src="./assets/postgres.svg" />
+              <img class="tech-stack-icon" src="./assets/react.svg" />
+              <img class="tech-stack-icon" src="./assets/html.svg" />
+              <img class="tech-stack-icon" src="assets/css.svg" />
+              <img class="tech-stack-icon" src="./assets/javascript.svg" />
+              <img class="tech-stack-icon" src="./assets/git.svg" />
+              <img class="tech-stack-icon" src="./assets/node.svg" />
+              <img class="tech-stack-icon" src="./assets/express.svg" />
+              <img class="tech-stack-icon" src="./assets/postgres.svg" />
+              <img class="tech-stack-icon" src="./assets/react.svg" />
             </div>
-            <p class="project-about">
-              More API practice, using the quandl.com API<br /><br />An app to
-              find prices of commodities. No idea what the units are, so the
-              price of rice could be for anything from 1 grain to an entire
-              farm.
-            </p>
           </div>
         </div>
       </section>
+      <section class="main-section" id="about">
+        <div class="about-wrapper">
+          <h1 class="main-title">Why Tech?</h1>
+          <p class="profile-about">
+            In late 2018 I made the brave decision to focus my efforts on
+            teaching myself how to code to a professional level, rather than
+            going to university. <br /><br />
+            It didn't take long before I realised the value of putting myself
+            out there, asking loads of questions to professional developers, and
+            adopting a headfirst learning approach. <br />
+            A few months later, I found a great community of support through
+            Founders and Coders, a free, but highly selective, 18 week
+            javascript bootcamp where I was surrounded by self-motivated, highly
+            driven individuals on a daily basis. <br /><br />
+            As someone who has been stuck in dry, demotivating educational
+            environments in his past, an education model where curiosity and
+            creativity are nurtured and rewarded was a breath of fresh air.
+            <br /><br />Over 18 weeks we covered a broad range of software
+            development skills and methodologies, and put them into practice on
+            project after project, day after day, week after week. <br />
+            <br />
+            I also gained valuable skills and experience in product design,
+            prototyping, user research, sprint planning and time estimation,
+            software testing, communicating with a non-technical product owner,
+            and my personal favourite learning outcome from this experience -
+            mentoring. <br /><br />
+            Every student is required to go back and mentor the next cohort of
+            students for a week, and I've also served as a project mentor, and
+            delivered a few talks to the students. <br /><br />
+            It is this cycle of transparent knowledge sharing that made me feel
+            at home in the tech world, and I'd love to join a company that
+            values this.
+          </p>
+        </div>
+      </section>
       <section class="main-section contact" id="contact">
-        <h1 class="main-title">Contact</h1>
-        <a
-          href="https://github.com/reubengt"
-          class="contact-link"
-          target="_blank"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/reuben-george-thomas"
-          class="contact-link"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        <a href="tel:07834243164" class="contact-link">Phone</a>
-        <a href="mailto:reubengeorgethomas@gmail.com" class="contact-link">
-          Email
-        </a>
-        <a
-          href="./assets/Reuben_George_Thomas_CV.pdf"
-          class="contact-link"
-          download
-        >
-          Download CV &#8595;
-        </a>
+        <div class="contact-bar">
+          <a target="_blank" href="https://github.com/reubengt">
+            <img class="contact-image" src="./assets/github.svg" />
+          </a>
+          <a
+            target="_blank"
+            href="https://linkedin.com/in/reuben-george-thomas"
+          >
+            <img class="contact-image" src="./assets/linkedin.svg" />
+          </a>
+          <a target="_blank" href="https://twitter.com/reubenmightcode">
+            <img class="contact-image" src="./assets/twitter.svg" />
+          </a>
+          <a href="./assets/Reuben_George_Thomas_CV.pdf" download>
+            <img class="contact-image" src="./assets/cv-icon.svg" />
+          </a>
+        </div>
+        <a class="back-to-start" href="#start">Back to Start</a>
       </section>
     </main>
     <script src="./script.js"></script>
