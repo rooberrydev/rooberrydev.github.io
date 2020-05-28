@@ -84,7 +84,7 @@ body {
   transform: translateX(-100vw);
 }
 .start-splash-screen > * {
-  margin: 2vh;
+  margin: 1.5vh;
 }
 .record {
   position: relative;
@@ -132,11 +132,11 @@ body {
   margin: 0.5rem;
 }
 .play-button {
-  width: 4rem;
-  height: auto;
+  width: 5rem;
+  height: 3rem;
   font-size: 1.5rem;
   border-radius: 3rem;
-  border: 2px solid var(--greyish);
+  border: none;
   color: var(--main-background-blue);
   background-color: var(--greyish);
   outline: none;
