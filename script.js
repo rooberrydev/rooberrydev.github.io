@@ -1,7 +1,7 @@
 document.querySelector("body").scrollIntoView({
   behavior: "auto",
 });
-
+const random = 0;
 let playButton = document.querySelector(".play-button");
 
 playButton.addEventListener("click", (e) => {
