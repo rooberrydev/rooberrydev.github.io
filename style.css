@@ -214,6 +214,7 @@ a:visited {
   margin-top: 2vh;
 }
 .tech-stack-slideshow {
+  background: #f0fdfa;
   position: relative;
   overflow: hidden;
   align-self: center;
@@ -275,6 +276,7 @@ a:visited {
   margin: 2vw;
   border: 5px solid var(--accent-color);
   box-shadow: 0px 0px 15px 0px var(--greyish);
+  background: #f0fdfa;
   border-radius: 1rem;
 }
 .project > * {
